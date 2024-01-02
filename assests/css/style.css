@@ -6,3 +6,32 @@ html {
 
 box-sizing: inherit;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+}
+
+.main_container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: red;
+}
+
+a {
+    text-decoration: none !important;
+    color: #333; /* Establecer el color predeterminado para los enlaces */
+  }
+  
+  a:hover {
+    color: #555; /* Cambiar el color al pasar el mouse */
+  }
+
+  ul, ol {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+  }
