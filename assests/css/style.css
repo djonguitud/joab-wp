@@ -2,68 +2,183 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+* {
+  --background-color-1: #FAF9FA;
+  --background-color-2: #777677;
+  --background-color-3: #909BB1;
+  --background-color-4: #67748B;
+  --background-color-5: #525057;
 
-box-sizing: inherit;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px; 
-    font-family: 'Poppins', sans-serif;
+
+  padding: 0;
+  margin: 0;
+  font-size: 16px; 
+  font-family: 'Poppins', sans-serif;
 }
 
 .main_container {
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto; 
-    background-color: red;
+  padding: 0;
+  margin: 0;
+  max-width: 2300px; 
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  
 }
 
 a {
-    text-decoration: none !important;
-    color: #333; /* Establecer el color predeterminado para los enlaces */
-  }
+  text-decoration: none !important;
+  color: #333; /* Establecer el color predeterminado para los enlaces */
+}
   
 a:hover {
-    color: #555; /* Cambiar el color al pasar el mouse */
-  }
+  color: #555; /* Cambiar el color al pasar el mouse */
+}
 
 ul, ol {
-    list-style: none !important;
-    padding: 0;
-    margin: 0;
-  }
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
 
-/*  Nav Bar   */
+/*  Main   */
 
-nav {
-  background-color: #4e4f50;
-  padding: 10px;
+main {
+  background-color: var(--background-color-1);
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: 90vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  position: relative;
+
+}
+
+.main_sub_container {
+  position: absolute;
+  top: 300px;
+  left: 328px;
+}
+
+
+/*  Acerca de Nosotros  */
+
+.about_page {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  padding: 80px;
+  background-color: var(--background-color-2);
+
+}
+
+.about_image {
+  height: 450px;
+  width: 600px;
+  background-color: magenta;
+  margin-right: 123px;
+
+}
+
+.about_caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+
+/*  Servicios   */
+
+.product_page {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-color-3);
   
 }
 
-.menu_container a {
+.product_boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr)); /* Crea columnas automáticas */
+  gap: 10px; /* Espacio entre los elementos */
+  height: 500px;
+}
+
+.product_box_1 {
+  background-color: #3498db;
+  grid-column: span 2; /* Ocupa 2 columnas */
+  grid-row: span 2; /* Ocupa 2 filas */
+}
+
+.product_box_2 {
+  background-color: #e74c3c;
+  
+}
+
+.product_box_3 {
+  background-color: #2ecc71;
+}
+
+.product_box_4 {
+  background-color: #f39c12;
+}
+
+.product_box_5 {
+  background-color: #9b59b6;
+}
+
+.product_box_6 {
+  background-color: #1abc9c;
+  grid-column: span 2; /* Ocupa 2 columnas */
+}
+
+h3 {
+  margin-bottom: 10px; /* Espacio entre el título y el mosaico */
+}
+
+
+/*  Footer Section    */
+
+footer {
+  background-color: var(--background-color-5);
   color: #fff;
-  padding: 10px;
-  margin: 0 10px;
-  transition: color 0.3s;
+  padding: 20px;
+  text-align: center;
 }
 
-nav a:hover {
-  color: #f56161;
+.map-container {
+  height: 300px;
+  position: relative;
 }
 
-.logo_container {
-  width: 94px;
-
+.map {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%) invert(100%);
 }
 
-#joab_logo {
-  max-width: 100%;
-  height: auto;
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
 }
