@@ -2,9 +2,17 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+* {
+  --background-color-1: #FAF9FA;
+  --background-color-2: #777677;
+  --background-color-3: #909BB1;
+  --background-color-4: #67748B;
+  --background-color-5: #525057;
 
-box-sizing: inherit;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -37,33 +45,3 @@ ul, ol {
   }
 
 /*  Nav Bar   */
-
-nav {
-  background-color: #4e4f50;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-.menu_container a {
-  color: #fff;
-  padding: 10px;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #f56161;
-}
-
-.logo_container {
-  width: 94px;
-
-}
-
-#joab_logo {
-  max-width: 100%;
-  height: auto;
-}
