@@ -8,6 +8,13 @@ html {
   --background-color-3: #909BB1;
   --background-color-4: #67748B;
   --background-color-5: #525057;
+  --font-size-sm: clamp(0.8rem, 0.08vw + 0.78rem, 0.89rem);
+  --font-size-md: clamp(1.25rem, 0.28vw + 1.18rem, 1.58rem);
+  --font-size-base: clamp(1rem, 0.16vw + 0.96rem, 1.19rem);
+  --font-size-xl: clamp(1.95rem, 0.72vw + 1.77rem, 2.81rem);
+  --font-size-lg: clamp(1.56rem, 0.46vw + 1.45rem, 2.11rem);
+  --font-size-xxxl: clamp(3.05rem, 1.64vw + 2.64rem, 5rem);
+  --font-size-xxl: clamp(2.44rem, 1.1vw + 2.17rem, 3.75rem);
 
 }
 
@@ -31,8 +38,6 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
-  
 }
 
 a {
@@ -48,6 +53,23 @@ ul, ol {
   list-style: none !important;
   padding: 0;
   margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+h3 {
+  font-size: var(--font-size-lg) ;
+
+}
+
+p {
+  font-size: var(--font-size-base);
 }
 
 /*  Main   */
